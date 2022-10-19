@@ -1,0 +1,11 @@
+
+
+
+awk -F '\t' -v 'OFS=\t' '
+{
+    if (NR == 1) {
+        print "#motif_id", "motif_name", "gene_name", "motif_similarity_qvalue", "orthologous_identity", "description";
+    }
+
+    print $1, $2, $3, $4, $5, $6;
+}' motif-anno.tbl > annotation_v1.tsv 
