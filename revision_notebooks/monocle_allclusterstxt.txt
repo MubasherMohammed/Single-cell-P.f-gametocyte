@@ -604,26 +604,7 @@ plot_cells(cds)
 ```
 
 
-networkx
-```{r}
-# Load packages and annotation data
-library(reshape2)
-#library(umap)
-library(pheatmap)
-library(igraph)
-#library(GGally) # ggplot2 >= 3.3.0
-library(ggplot2)
-#windowsFonts(TNM = windowsFont("Times New Roman"))
-#windowsFonts(HNR = windowsFont("Helvetica Neue CE 55 Roman")) # Use specific font on Windows platform
-#library(RcisTarget)
-#library(AUCell)
-# Load extra functions
-source("SIGNET.R")
 
-```
-
-```{r}
-gene_tf <- read.csv("grn_adj_v2.csv")
 
 ```
 
